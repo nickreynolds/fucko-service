@@ -3,7 +3,9 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const axios = require('axios');
 const app = express();
-const port = 4000;
+const dotenv = require('dotenv');
+dotenv.config();
+const port = process.env.PORT;
 
 
 const pinJSONToIPFS = (JSONBody, callback) => {
