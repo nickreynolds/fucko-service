@@ -15,7 +15,7 @@ const pinJSONToIPFS = (JSONBody, callback) => {
         .post(url, JSONBody, {
             headers: {
                 pinata_api_key: process.env.PINATA_API_KEY,
-                pinata_secret_api_key: process.env.PINATA_API_KEY_secret
+                pinata_secret_api_key: process.env.PINATA_API_KEY_SECRET
             }
         }).then((response, error) => {
             // console.log("pinJSONToIPFS res: ", response);
